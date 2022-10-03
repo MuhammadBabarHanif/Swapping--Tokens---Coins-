@@ -203,10 +203,14 @@ contract SwappingExchange {
     } 
 
     //Change the Price of Coin
-    function changeCoinPrice(uint newPrice)  public onlyAdmin  {  // Update Price of Token
-        require(newPrice >0,"SHOULD_NOT_ZERO");
-        coinPrice = newPrice;
-        emit PriceChanged(newPrice,msg.sender);
+    
+    
+    function changeCoin price(uint256 price) punblic onlyAdmin {
+       require(newPrice >0,"SHOULD Greater than 0");
+        coinPrice = price;
+        emit PriceChanged(price,msg.sender);
+    
+    
     }
 
     function mul(uint256 x, uint256 y) internal pure returns (uint256 z) {
